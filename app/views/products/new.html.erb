@@ -1,0 +1,12 @@
+<h1>Add a New Product</h1>
+<% form_with (model: product) do |form| %>
+
+<div>
+  <%=form.label :name %>
+  <%=form.textfield :name %>
+</div>
+
+<div>
+  <%= form.submit%>
+</div>
+<% end %>
