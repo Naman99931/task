@@ -7,8 +7,14 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def show
+  end
+
   def create
     Product.create(params[:product])
+  end
+
+  def edit
   end
 
   def update

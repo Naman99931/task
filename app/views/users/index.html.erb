@@ -1,4 +1,6 @@
-<h1>Product List </h1>
-<% @product.each do |product| %>
-<%= product.name %>
+<h1>Users List </h1>
+<% @user.each do |user| %>
+<%= link_to user.name, show_users_path%>
+<br>
 <%end%>
+<%= link_to "View Products", products_path %>
